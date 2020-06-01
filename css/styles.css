@@ -11,6 +11,25 @@
 
 /* /header */
 
+/* main section of page */
+
+#HeadingOne{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+#text{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+#lineBreak{
+  border-bottom: 1px solid #343a40;
+  max-width: 75%
+  margin:auto;
+}
+/* /main section of page */
 
 /* footer */
 footer {
