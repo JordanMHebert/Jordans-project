@@ -13,7 +13,11 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/contact.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
 	<title>Jordan M Hebert - Contact</title>
 	<!-- /Bootstrap CSS -->
@@ -75,19 +79,61 @@
 
 
 <!-- section 1 - Contact Form -->
-
-
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+            </div>
+            <form action="contactform.php" method="POST" enctype="multipart/form-data" role="form">
+                <h3>Drop me a Message</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+														<label id="text"><strong>Name:</strong></label>
+                            <input type="text" name="name" class="form-control" placeholder="Your Name *"/>
+                        </div>
+                        <div class="form-group">
+														<label id="text"><strong>Email:</strong></label>
+                            <input type="text" name="email" class="form-control" placeholder="Your Email *"/>
+                        </div>
+                        <div class="form-group">
+														<label id="text"><strong>Phone:</strong></label>
+                            <input type="text" name="phone" class="form-control" placeholder="Your Phone Number *"/>
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+														<label id="text"><strong>Message:</strong></label>
+                            <textarea name="message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+										<div class="container mt-5">
+											<h3 class="card-title mt-2 text-center" id="ContactMeHeading">Reach out to me at:</h3>
+										<div class="row">
+											<div class="col">
+												<p class="text-center" id="text"><strong>Phone:</strong>(802)399-0218</p>
+												<p class="text-center" id="text"><strong>Email:</strong><a href="mailto:jordan@jordanmhebert.com?subject=Potential%20Work%20as%20a%20Front%20End%20Developer">jordan@jordanmhebert.com</a>
+												</p>
+											</div>
+										</div>
+									</div>
+                </div>
+            </form>
+</div>
 <!-- /section 1 - Contact Form -->
 
 
 <!-- section 2 - Email Info -->
 
 
+
 <!-- /section 2 - Email Info -->
 
 
 	<!-- footer of page -->
-	<footer>
+	<footer class="mt-5">
 		<ul class="nav justify-content-center">
 			<li class="nav-item">
 				<a href="https://www.facebook.com/jordan.hebert.5245/" target="_blank" class="socialMedia">

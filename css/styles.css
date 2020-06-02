@@ -32,9 +32,20 @@
 }
 
 #lineBreak{
-  border-bottom: 1px solid #343a40;
+  border-bottom: 1px solid #AD343E;
   margin:auto;
 }
+
+#imageBoxShadow{
+  box-shadow: 5px 5px 5px #343a40;
+}
+
+#ContactMeHeading{
+  margin-bottom: 2%;
+  text-align: center;
+  color: #0062cc;
+}
+
 /* /main section of page */
 
 /* footer */
