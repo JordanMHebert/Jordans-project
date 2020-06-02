@@ -18,6 +18,13 @@
   letter-spacing: 1px;
 }
 
+#HeadingTwo{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  color: #AD343E;
+}
+
+
 #text{
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
@@ -26,7 +33,6 @@
 
 #lineBreak{
   border-bottom: 1px solid #343a40;
-  max-width: 75%
   margin:auto;
 }
 /* /main section of page */
