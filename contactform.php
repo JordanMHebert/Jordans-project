@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
   $to ="jordan@jordanmhebert.com";
   $headers = "From: $email_from \r\n";
-  $headers = "Reply-To: $email \r\n";
+  $headers .= "Reply-To: $email \r\n";
 
   mail($to,$email_subject,$email_body,$headers);
 
