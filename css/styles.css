@@ -46,6 +46,21 @@
   color: #0062cc;
 }
 
+.success{
+  background-color: #78CF82;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+.failure{
+  background-color: #D94545;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
 /* /main section of page */
 
 /* footer */

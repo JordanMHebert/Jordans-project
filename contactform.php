@@ -1,28 +1,35 @@
 <?php
 
-$name=$email=$phone=$message="";
-$email_from=$email_subject=$email_body=$headers=$to="";
+$name=$email=$phone=$message=$success=$failure='';
+$email_from=$email_subject=$email_body=$headers=$to='';
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
   $name = validateinput($_POST["name"]);
   $email = validateinput($_POST["email"]);
   $phone = validateinput($_POST["phone"]);
   $message = validateinput($_POST["message"]);
+  unset($_POST["btnSubmit"]);
+
+foreach ($_POST as $key => $value) {
+  $email_body.= "$key: $value.\n";
+}
 
   $email_from = "jordanmhebert.com";
   $email_subject = "New Message from jordanmhebert.com Contact Form";
-  $email_body = "Name: $name.\n".
-                "Email: $email.\n".
-                "Phone: $phone.\n".
-                "Message: $message.\n";
+
 
   $to ="jordan@jordanmhebert.com";
   $headers = "From: $email_from \r\n";
   $headers .= "Reply-To: $email \r\n";
 
-  mail($to,$email_subject,$email_body,$headers);
+  if(mail($to,$email_subject,$email_body,$headers)){
+    $success="Your submission was Successful";
+    $name=$email=$phone=$message='';
+  } else {
+    $failure="Sorry, your submission did not go through. Please try again.";
+    $name=$email=$phone=$message='';
+  }
 
-  header("location: formsuccess.html");
 }
 
   function validateinput($data){
