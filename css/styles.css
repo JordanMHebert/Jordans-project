@@ -55,6 +55,13 @@ header {
   padding: 0;
 }
 
+#TrainingCard{
+  height: 15em;
+}
+
+#TrainingCard2{
+  height: 13.7em;
+}
 
 #imageBoxShadow{
   box-shadow: 5px 5px 5px #343a40;
