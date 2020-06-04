@@ -27,7 +27,8 @@
 
 <!-- header -->
 <header>
-		<!-- navbar -->
+
+	<!-- navbar -->
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -53,75 +54,70 @@
 					<a class="nav-link text-center mt-2" id="nav-link" href="contact.html">Contact</a>
 				</li>
 			</ul>
-			</div>
+		</div>
 	</nav>
 	<!-- /nav bar -->
+
 </header>
 <!-- /header -->
+
 
 <!-- body -->
 <body>
 
-<h1 class="display-3 text-center mt-4 text-white" id="HeadingOne">Contact Form</h1>
+	<h1 class="display-3 text-center mt-4 text-white" id="HeadingOne">Contact Form</h1>
 
-<?php include("contactform.php"); ?>
-<!-- section 1 - Contact Form -->
-<div class="container contact-form">
-						<div class="col" id="LandingImage">
-							<img src="img/tech-photos/Contact-us.jpg" class="img-fluid" alt="picture of web developer" />
+	<?php include("contactform.php"); ?>
+	<!-- section 1 - Contact Form -->
+	<div class="container contact-form">
+		<div class="col" id="LandingImage">
+			<img src="img/tech-photos/Contact-us.jpg" class="img-fluid" alt="picture of web developer" />
+		</div>
+		<div class="contact-image">
+			<img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+		</div>
+		<form action="&lt;?php echo htmlspecialchars($_SERVER[" PHP_SELF"]); ?&gt;" method="POST">
+			<div class=" my-2 success"><?= $success; ?></div>
+			<div class="my-2 failure"><?= $failure; ?></div>
+			<h3>Drop me a Message</h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="text"><strong>Name:</strong></label>
+						<input type="text" name="name" class="form-control" required="required" placeholder="Your Name *" />
+					</div>
+					<div class="form-group">
+						<label id="text"><strong>Email:</strong></label>
+						<input type="text" name="email" class="form-control" required="required" placeholder="Your Email *" />
+					</div>
+					<div class="form-group">
+						<label id="text"><strong>Phone:</strong></label>
+						<input type="text" name="phone" class="form-control" required="required" placeholder="Your Phone Number *" />
+					</div>
+					<div class="form-group text-center">
+						<input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="text"><strong>Message:</strong></label>
+						<textarea name="message" class="form-control" required="required" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+					</div>
+				</div>
+				<div class="container mt-5">
+					<h3 class="card-title mt-2 text-center" id="ContactMeHeading">Reach out to me at:</h3>
+					<div class="row">
+						<div class="col">
+							<p class="text-center" id="text"><strong>Phone:</strong> (802) 828-7441</p>
+							<p class="text-center" id="text"><strong>Email:</strong><a href="mailto:jordan@jordanmhebert.com?subject=Potential%20Work%20as%20a%20Front%20End%20Developer">jordan@jordanmhebert.com</a>
+							</p>
 						</div>
-						<div class="contact-image">
-                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-            </div>
-            <form action="&lt;?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?&gt;" method="POST">
-							 <div class=" my-2 success"><?= $success; ?></div>
-							 <div class="my-2 failure"><?= $failure; ?></div>
-							  <h3>Drop me a Message</h3>
-               <div class="row">
-							        <div class="col-md-6">
-                        <div class="form-group">
-														<label id="text"><strong>Name:</strong></label>
-                            <input type="text" name="name" class="form-control" required="required" placeholder="Your Name *"/>
-                        </div>
-                        <div class="form-group">
-														<label id="text"><strong>Email:</strong></label>
-                            <input type="text" name="email" class="form-control" required="required" placeholder="Your Email *"/>
-                        </div>
-                        <div class="form-group">
-														<label id="text"><strong>Phone:</strong></label>
-                            <input type="text" name="phone" class="form-control" required="required" placeholder="Your Phone Number *"/>
-                        </div>
-                        <div class="form-group text-center">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-														<label id="text"><strong>Message:</strong></label>
-                            <textarea name="message" class="form-control" required="required" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                        </div>
-                    </div>
-										<div class="container mt-5">
-											<h3 class="card-title mt-2 text-center" id="ContactMeHeading">Reach out to me at:</h3>
-										<div class="row">
-											<div class="col">
-												<p class="text-center" id="text"><strong>Phone:</strong> (802) 828-7441</p>
-												<p class="text-center" id="text"><strong>Email:</strong><a href="mailto:jordan@jordanmhebert.com?subject=Potential%20Work%20as%20a%20Front%20End%20Developer">jordan@jordanmhebert.com</a>
-												</p>
-											</div>
-										</div>
-									</div>
-                </div>
-            </form>
-</div>
-<!-- /section 1 - Contact Form -->
-
-
-<!-- section 2 - Email Info -->
-
-
-
-<!-- /section 2 - Email Info -->
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- /section 1 - Contact Form -->
 
 
 	<!-- footer of page -->
@@ -149,12 +145,14 @@
 	</footer>
 	<!-- /footer of page -->
 
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		<!-- /Optional JavaScript -->
+	<!-- /Optional JavaScript -->
+
 
 </body>
 <!-- /body -->
