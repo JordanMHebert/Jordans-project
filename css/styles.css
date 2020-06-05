@@ -32,6 +32,15 @@ header {
   color: #AD343E;
 }
 
+#HeadingThree{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 4px;
+  color: #FFFBFC;
+  background-color: #3E5C76;
+  padding-top: .6em;
+  padding-bottom: .6em;
+}
 
 #text{
   font-family: 'Open Sans', sans-serif;
@@ -39,10 +48,10 @@ header {
   font-size: 1.1em;
 }
 
-#text3{
+#text2{
   font-family: 'Open Sans', sans-serif;
-  letter-spacing: 1px;
-  font-size: 1.3em;
+  letter-spacing: 2px;
+  font-size: 1.1em;
 }
 
 #lineBreak{
@@ -61,6 +70,10 @@ header {
 
 #TrainingCard2{
   height: 13.7em;
+}
+
+#pricing{
+  height: 65em;
 }
 
 #profilePic{
