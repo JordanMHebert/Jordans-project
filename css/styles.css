@@ -77,7 +77,12 @@ header {
 }
 
 #profilePic{
-  max-height: 15em;
+  height: 15em;
+}
+
+#profilePic2{
+  height: 20em;
+  width: 30em;
 }
 
 #imageBoxShadow{
