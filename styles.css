@@ -98,14 +98,18 @@ header {
 .success{
   background-color: #78CF82;
   border-radius: 5px;
-  letter-spacing: 100px;
+  letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 80em;
-  display: none;
+  font-size: 1em;
+  visibility:visible;
+  max-width: 18em;
+  margin: auto;
+
 }
 
 #successID{
-  display: none;
+  visibility: visible;
+  margin: auto;
 }
 
 .failure{

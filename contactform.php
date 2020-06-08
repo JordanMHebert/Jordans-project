@@ -1,5 +1,5 @@
 <?php
-
+$result = False;
 $name=$email=$phone=$message=$success=$failure='';
 $email_from=$email_subject=$email_body=$headers=$to='';
 
@@ -23,14 +23,11 @@ foreach ($_POST as $key => $value) {
   $headers .= "Reply-To: $email \r\n";
 
   if(mail($to,$email_subject,$email_body,$headers)){
-    $success="Your submission was Successful";
-    $name=$email=$phone=$message='';
-    // echo "<script type="text/javascript"> document.getelementbyId("successID").style.visibility = "visible";</script>"
-  } else {
-    $failure="Sorry, your submission did not go through. Please try again.";
-    $name=$email=$phone=$message='';
+      readfile("contact-success.html");
+    }
+  else {
+    readfile("contact.html");
   }
-readfile("contact.html");
 }
 
   function validateinput($data){
