@@ -1,5 +1,5 @@
 /* header */
-#nav-link{
+.navstyle{
   background-color: rgba(52, 58, 64, 0.6);
   color: #FFFBFC;
   font-family: 'Open Sans', sans-serif;
@@ -13,26 +13,25 @@
 header {
       width: 100%;
       height: 80vh;
-      background: url(https://lh3.googleusercontent.com/35irVNhpdCU4nuX1vbwPXK-WcrbFy-aUaK2-wzf-nOYMppb1n5hodO0oinINDbUtO9xYP1LthSUN9vnaTXXrhUDDjVK9jqt-zTiuZdsOub5SRR15xwISZNXEw0_cVtwbXqaZaLZF8J7BDwnSP5dsLeeuHBOswGd9vIJiM5mfIOu27rTunkrj8zCkIGrlSW3ef8ii9TnRsVbGhy48u-WXt9DS-TzYcRfPFO_a1dmVMqPatYaYtFUz6HF6K_vtHf7S_mc12PyYyJ2fqriJGQrVGA1lwzwwQvbhNzFCmQKCJOzUlMYMGMbbwF8Cyu9cHTvStmG5CF4G1dVAusshogzCmSpvGFyFpyaDIJ29AdaJ1cHiT6b5q40D0LLhP5QSn-OM0DPE0Ed-xvXWH1VaMR2A9jv9R1cWAsZV7K16QKZ_Qxpuwxf4VQjB-UUfXhjxfbnUiJCRPjD6LcD8L3yiezLkooWEdKa8-eMzutX9XfKUZe2sy0fLEg9y8QASZ0MBz1KiJmykj2g11o6vgwmQw67KEM4bDVElaFxXrOW_nchTzKtqV-YCe-2dNQDDX7PjtB7EJDDCqt0qS40lvHzTnqsoFDaFQ8vihPf5jKLQ0f4Xh1nCxs1DOfdReYjT51o3c4dscJAoYj994-PKqZfRaPapsGWycUwiJ9FfCQtH-R-FztaAuRhRp50hPDPFKc7IGA=w1880-h784-no?authuser=0);
-      background-size: cover;
+      background-image: url('NavPic.jpeg'); background-size: cover;
 }
 
 /* /header */
 
 /* main section of page */
 
-#HeadingOne{
+.HeadingOne{
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
 }
 
-#HeadingTwo{
+.HeadingTwo{
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   color: #AD343E;
 }
 
-#HeadingThree{
+.HeadingThree{
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3em;
   letter-spacing: 4px;
@@ -42,50 +41,50 @@ header {
   padding-bottom: .6em;
 }
 
-#text{
+.text{
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   font-size: 1.1em;
 }
 
-#text2{
+.text2{
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   font-size: 1.1em;
 }
 
-#lineBreak{
+.lineBreak{
   border-bottom: 1px solid rgba(52, 58, 64, 0.6);
   margin:auto;
 }
 
-#LandingImage{
+.LandingImage{
   max-width: 100%;
   padding: 0;
 }
 
-#TrainingCard{
+.TrainingCard{
   height: 15em;
 }
 
-#TrainingCard2{
+.TrainingCard2{
   height: 13.7em;
 }
 
-#pricing{
+.pricing{
   height: 65em;
 }
 
-#profilePic{
+.profilePic{
   height: 15em;
 }
 
-#profilePic2{
+.profilePic2{
   height: 20em;
   width: 30em;
 }
 
-#imageBoxShadow{
+.imageBoxShadow{
   box-shadow: 5px 5px 5px #343a40;
 }
 
@@ -95,12 +94,18 @@ header {
   color: #0062cc;
 }
 
+
 .success{
   background-color: #78CF82;
   border-radius: 5px;
-  letter-spacing: 1px;
+  letter-spacing: 100px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: 80em;
+  display: none;
+}
+
+#successID{
+  display: none;
 }
 
 .failure{
@@ -109,6 +114,7 @@ header {
   letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  visibility: hidden;
 }
 /* /main section of page */
 

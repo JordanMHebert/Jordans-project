@@ -4,6 +4,7 @@
 <html lang="en">
 
 <!-- head -->
+
 <head>
 
 	<!-- Required meta tags -->
@@ -16,8 +17,8 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/styles.css" />
-	<link rel="stylesheet" href="css/contact.css" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="contact.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
 	<title>Jordan M Hebert - Contact</title>
 	<!-- /Bootstrap CSS -->
@@ -25,73 +26,71 @@
 </head>
 <!-- /head -->
 
-<!-- header -->
-<header>
-
-	<!-- navbar -->
-	<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-			<a class="navbar-brand" href="#">
-				<img src="img/myLogo/Color-logo.png" class="mt-2" width="400" height="200" alt="Jordan M Hebert Logo">
-			</a>
-			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link text-center mt-2" id="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-center mt-2" id="nav-link" href="training.html">Training</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-center mt-2" id="nav-link" href="portfolio.html">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-center mt-2" id="nav-link" href="contract-work.html">Contract Work</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-center mt-2" id="nav-link" href="contact.html">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!-- /nav bar -->
-
-</header>
-<!-- /header -->
-
-
 <!-- body -->
+
 <body>
+	<!-- header -->
+	<header>
 
-	<h1 class="display-3 text-center mt-4 text-white" id="HeadingOne">Contact Form</h1>
+		<!-- navbar -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<a class="navbar-brand" href="#">
+					<img src="Color-logo.png" class="mt-2" width="400" height="200" alt="Jordan M Hebert Logo">
+				</a>
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link text-center navstyle mt-2" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center navstyle mt-2" href="training.html">Training</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center navstyle mt-2" href="portfolio.html">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center navstyle mt-2" href="contract-work.html">Contract Work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-center navstyle mt-2" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- /nav bar -->
 
-	<?php include("contactform.php"); ?>
+	</header>
+	<!-- /header -->
+
+	<h1 class="display-3 text-center mt-4 HeadingOne text-white">Contact Form</h1>
+
 	<!-- section 1 - Contact Form -->
 	<div class="container contact-form">
-		<div class="col" id="LandingImage">
-			<img src="img\tech-photos\Contact-us.jpeg" class="img-fluid" alt="picture of web developer" />
+		<div class="col LandingImage">
+			<img src="Contact-us.jpeg" class="img-fluid" alt="picture of web developer" />
 		</div>
 		<div class="contact-image">
 			<img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
 		</div>
-		<form action="&lt;?php echo htmlspecialchars($_SERVER[" PHP_SELF"]); ?&gt;" method="POST">
-			<div class=" my-2 success"><?= $success; ?></div>
-			<div class="my-2 failure"><?= $failure; ?></div>
+		<form action="contactform.php" method="POST">
+			<div class="success" id="successID">Your submission was Successful</div>
+			<div class="failure">Sorry, your submission did not go through. Please try again.</div>
 			<h3>Drop me a Message</h3>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
-						<label id="text"><strong>Name:</strong></label>
+						<label class="text"><strong>Name:</strong></label>
 						<input type="text" name="name" class="form-control" required="required" placeholder="Your Name *" />
 					</div>
 					<div class="form-group">
-						<label id="text"><strong>Email:</strong></label>
+						<label class="text"><strong>Email:</strong></label>
 						<input type="text" name="email" class="form-control" required="required" placeholder="Your Email *" />
 					</div>
 					<div class="form-group">
-						<label id="text"><strong>Phone:</strong></label>
+						<label class="text"><strong>Phone:</strong></label>
 						<input type="text" name="phone" class="form-control" required="required" placeholder="Your Phone Number *" />
 					</div>
 					<div class="form-group text-center">
@@ -100,7 +99,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
-						<label id="text"><strong>Message:</strong></label>
+						<label class="text"><strong>Message:</strong></label>
 						<textarea name="message" class="form-control" required="required" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
 					</div>
 				</div>
@@ -108,8 +107,8 @@
 					<h3 class="card-title mt-2 text-center" id="ContactMeHeading">Reach out to me at:</h3>
 					<div class="row">
 						<div class="col">
-							<p class="text-center" id="text"><strong>Phone:</strong> (802) 828-7441</p>
-							<p class="text-center" id="text"><strong>Email:</strong><a href="mailto:jordan@jordanmhebert.com?subject=Potential%20Work%20as%20a%20Front%20End%20Developer">jordan@jordanmhebert.com</a>
+							<p class="text-center text"><strong>Phone:</strong> (802) 828-7441</p>
+							<p class="text-center text"><strong>Email:</strong><a href="mailto:jordan@jordanmhebert.com?subject=Potential%20Work%20as%20a%20Front%20End%20Developer">jordan@jordanmhebert.com</a>
 							</p>
 						</div>
 					</div>
@@ -125,19 +124,19 @@
 		<ul class="nav justify-content-center">
 			<li class="nav-item">
 				<a href="https://www.facebook.com/jordan.hebert.5245/" target="_blank" class="socialMedia">
-					<img src="img/social-media-logos/facebook.png" alt="Facebook logo" class="socialMedia" /></a>
+					<img src="facebook.png" alt="Facebook logo" class="socialMedia" /></a>
 			</li>
 			<li class="nav-item">
 				<a href="https://twitter.com/JordanH62852157" target="_blank" class="socialMedia">
-					<img src="img/social-media-logos/twitter.png" alt="Twitter logo" class="socialMedia" /></a>
+					<img src="twitter.png" alt="Twitter logo" class="socialMedia" /></a>
 			</li>
 			<li class="nav-item">
 				<a href="https://www.instagram.com/jordan_m_hebert/" target="_blank" class="socialMedia">
-					<img src="img/social-media-logos/instagram.png" alt="Instagram logo" class="socialMedia" /></a>
+					<img src="instagram.png" alt="Instagram logo" class="socialMedia" /></a>
 			</li>
 			<li class="nav-item">
 				<a href="https://www.linkedin.com/in/jordan-hebert-8a7981193/" target="_blank" class="socialMedia">
-					<img src="img/social-media-logos/linkedin.png" alt="LinkedIn logo" class="socialMedia" /></a>
+					<img src="linkedin.png" alt="LinkedIn logo" class="socialMedia" /></a>
 			</li>
 		</ul>
 		<p class="copyright">Jordan M Hebert</p>

@@ -8,7 +8,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   $email = validateinput($_POST["email"]);
   $phone = validateinput($_POST["phone"]);
   $message = validateinput($_POST["message"]);
-  unset($_POST["btnSubmit"]);
+
 
 foreach ($_POST as $key => $value) {
   $email_body.= "$key: $value.\n";
@@ -25,11 +25,12 @@ foreach ($_POST as $key => $value) {
   if(mail($to,$email_subject,$email_body,$headers)){
     $success="Your submission was Successful";
     $name=$email=$phone=$message='';
+    // echo "<script type="text/javascript"> document.getelementbyId("successID").style.visibility = "visible";</script>"
   } else {
     $failure="Sorry, your submission did not go through. Please try again.";
     $name=$email=$phone=$message='';
   }
-
+readfile("contact.html");
 }
 
   function validateinput($data){
@@ -38,4 +39,7 @@ foreach ($_POST as $key => $value) {
     $data=htmlspecialchars($data);
     return $data;
   }
+
+
+
  ?>
